@@ -1,0 +1,18 @@
+.App{
+  display: flex;
+  flex-direction: row;
+  flex: 10;
+  margin-top: 0;
+}
+.sidebar{
+  margin-top: 0;
+  width: 20%;
+  height: 100vh;
+  
+} 
+.map{
+  /* position: relative; */
+  
+  width: 80%;
+  
+}
