@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <SideBar className="sidebar" trip={trip} setClear={setClear} dist={dist}/>
       {/* Loading of map Main code in map.js */}
-
+      {/* pull request */}
       <Map  className="map" isLoaded={isLoaded} getTrip={getTrip} Clear={clear} getDist = {getDist}/>
 
     </div>
