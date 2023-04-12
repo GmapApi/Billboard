@@ -25,13 +25,13 @@
     border: 3px solid #000;
     z-index: 5;
     position: absolute;
-    bottom: 10%;
+    bottom: 4%;
     color: #000;
   }
   
   .mapContainer{
     height: 100%;
-    width: 80%;
+    width: 100%;
   }
   .para {
     color: #000000;
