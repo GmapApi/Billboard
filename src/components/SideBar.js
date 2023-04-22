@@ -70,6 +70,9 @@ const SideBar =(props)=>{
             </div>
             <div>
                 <button className="btn" onClick={handleSubmit}>Enter Record</button>
+                <button className="btn">
+          View Records
+        </button>
                 <button className="btn" onClick={()=>window.location.reload(true)}>Clear Route</button>
             </div>
             <div>
