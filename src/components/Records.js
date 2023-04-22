@@ -18,7 +18,8 @@ function Records() {
   useEffect(() => {
      const getData = async () => {
        const res = await fetch(
-         "http://localhost/show_details.php"
+         "https://embeddedcreation.in/deeGIS/backend/show_details.php"
+
        );
        const getData = await res.json();
        setData(getData);
