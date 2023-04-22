@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 import "./SideBar.css"
-import nmc from "../assets/nmc.jpg";
+import smartCity from "../assets/smart-city-nagpur-logo.png";
 import axios from "axios";
 const SideBar =(props)=>{
     
@@ -57,7 +57,7 @@ const SideBar =(props)=>{
         // <Menu>
         <div className="sidebar">
         <div style={{display:"flex"}}>
-        <div><img className="logo" src={nmc}/></div>
+        <div><img className="logo" src={smartCity}/></div>
 <div><h2>Nagpur Municipal Corporation</h2></div>
         </div>
             <h1 className="heading">Route Details</h1>
