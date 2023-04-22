@@ -19,6 +19,7 @@ function Records() {
      const getData = async () => {
        const res = await fetch(
          "https://embeddedcreation.in/deeGIS/backend/show_details.php"
+
        );
        const getData = await res.json();
        setData(getData);
