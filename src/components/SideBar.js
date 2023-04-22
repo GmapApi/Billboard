@@ -10,7 +10,9 @@ const SideBar =(props)=>{
     const dist = props.dist;
     var rpk=dist*15;
     const rpk1=rpk.toFixed(2);
-    const [date,setDate] = useState('');
+    
+    const today = new Date().toISOString().substr(0, 10);
+    const [date, setDate] = useState(today);
     const [name,setName] = useState('');
     // const[posts,setposts] = useState([]);
 
@@ -65,9 +67,14 @@ const SideBar =(props)=>{
                 
             </div>
             <div>
-                <p className="label">Date:</p>
-                <input className ="input" type="date" onChange={(e)=>setDate(e.target.value)}></input>
-            </div>
+        <p className="label">Date:</p>
+        <input
+          className="input"
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+        />
+      </div>
             <div>
                 <button className="btn" onClick={handleSubmit}>Enter Record</button>
                 <button className="btn">
