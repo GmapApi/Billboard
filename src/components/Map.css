@@ -1,44 +1,35 @@
 .marker {
-    height: 20px;
-    width: 20px;
-    margin-left: 10px;
-    margin-top: -5px;
-    
-  }
-  .style{
-    display: flex;
-  }
-  
-  .cbox {
-    height: 15px;
-    width: 25px;
-    margin-left: 5px;
-    /* margin-top: 8px; */
-    vertical-align: middle;
-    
-     /* margin-bottom: 15px;  */
-  }
-  #legend {
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    margin: 10px;
-    border: 3px solid #000;
-    z-index: 5;
-    position: absolute;
-    bottom: 4%;
-    color: #000;
-  }
-  
-  .mapContainer{
-    height: 100%;
-    width: 100%;
-  }
-  .para {
-    color: #000000;
-    /* word-wrap: break-word;
-    font-weight: 600;
-    font-size: medium;
-    margin-top: 15px; */
-    vertical-align: middle;
-  }
-  
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+.style {
+  display: flex;
+}
+
+.cbox {
+  height: 15px;
+  width: 25px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+#legend {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid #000;
+  z-index: 5;
+  position: fixed;
+  bottom: 4%;
+  color: #000;
+}
+
+.mapContainer {
+  height: 100%;
+  width: 100%;
+}
+.para {
+  color: #000000;
+  vertical-align: middle;
+}
