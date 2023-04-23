@@ -8,15 +8,20 @@ const SideBar =(props)=>{
     // const url = "";
     const trip = props.trip;
     const dist = props.dist;
+    const markers = trip.split("->").map((s, i) => ({ number: i+1, Name: s }));
     var rpk=dist*15;
     const rpk1=rpk.toFixed(2);
     const today = new Date().toISOString().substr(0, 10);
     const [date, setDate] = useState(today);
     const [name,setName] = useState('');
-    
+
+    const columns =[
+      {title: "No.",field:"number"},
+      {title : "Board Name",field:"Name"},
+    ]
     
     // const[posts,setposts] = useState([]);
-
+    console.log(markers);
 
   const handleSubmit = () => {
     if (name.length === 0) {
@@ -105,6 +110,28 @@ const SideBar =(props)=>{
           Dist: {props.dist}
           {props.dist > 0 ? " Km" : ""}
         </p>
+      </div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              {columns.map((column) => (
+                <th key={column.field}>{column.title}</th>
+              ))}
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {markers.map((row) => (
+              <tr key={row.id}>
+                {columns.map((column) => (
+                  <td key={row.id}>{row[column.field]}</td>
+                ))}
+                <td><button>Upload</button></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
       <div>
         {/* <p className="label">Generated Amount: {rpk1}{(props.dist > 0)? " Rs":""}</p> */}
