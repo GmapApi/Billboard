@@ -14,6 +14,8 @@ function App() {
   });
   const [trip, setTrip] = useState("");
   const [dist, setDist] = useState();
+  const [markers,setMarkers] = useState([]);
+  
   function getTrip(trip) {
     setTrip(trip);
   }

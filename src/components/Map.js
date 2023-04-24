@@ -101,11 +101,13 @@ const Map = (props) => {
 
     setCoordinates(coordinates);
     setCenter(coordinates);
+    
 
     //pushing cordinates/markers selected into an array(setCoords)
     if (setCoords.length < 1) {
       setSelectedCoords([...setCoords, coordinates]);
       setValues([...values, marker.MarkerID]);
+      
       setM_type(marker.Marker_Type);
     } else {
       if (m_type == marker.Marker_Type && !values.includes(marker.MarkerID)) {
@@ -171,6 +173,8 @@ const Map = (props) => {
         "Sainath Nagar Ring Road",
         "Airport Wardha Road",
       ]);
+    }else{
+      setAllOptions(["Select path"]);
     }
   };
 
