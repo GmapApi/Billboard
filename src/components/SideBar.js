@@ -65,9 +65,9 @@ const SideBar =(props)=>{
         Nagpur Smart & Sustainable City Development Corporation LTD
         </div>
       </div>
-      <h1 className="heading">Route Details</h1>
+      <h1 className="heading">Admin Panel</h1>
       <div>
-        <p className="label">Name:</p>
+        <p className="label">Zone type:</p>
         <input
           className="input"
           type="text"
@@ -75,6 +75,22 @@ const SideBar =(props)=>{
         ></input>
       </div>
       <div>
+        <p className="label">Latitude</p>
+        <input
+          className="input"
+          type="text"
+          onChange={(e) => setName(e.target.value)}
+        ></input>
+      </div>
+      <div>
+        <p className="label">Longitude</p>
+        <input
+          className="input"
+          type="text"
+          onChange={(e) => setName(e.target.value)}
+        ></input>
+      </div>
+      {/* <div>
         <p className="label">Date:</p>
         <input
           className="input"
@@ -82,21 +98,21 @@ const SideBar =(props)=>{
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
-      </div>
+      </div> */}
       <div>
         <button className="btn" onClick={handleSubmit}>
-          Enter Record
+          Enter coordinates
         </button>
         <button className="btn">
             <Link to="/Records" style={{ textDecoration: 'none', color: 'inherit' }}>
           View Records
             </Link>
         </button>
-        <button className="btn" onClick={() => window.location.reload(true)}>
+        {/* <button className="btn" onClick={() => window.location.reload(true)}>
           Clear Route
-        </button>
+        </button> */}
       </div>
-      <div>
+      {/* <div>
         <p className="label">Path:</p>
         <p className="label">{props.trip}</p>
       </div>
@@ -107,8 +123,8 @@ const SideBar =(props)=>{
         </p>
       </div>
       <div>
-        {/* <p className="label">Generated Amount: {rpk1}{(props.dist > 0)? " Rs":""}</p> */}
-      </div>
+        <p className="label">Generated Amount: {rpk1}{(props.dist > 0)? " Rs":""}</p>
+      </div> */}
     </div>
     // </Menu>
   );
